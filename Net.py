@@ -1,6 +1,6 @@
 import tensorflow as tf
 
-# Neural network with conv and pooling layer
+
 model = tf.keras.Sequential(
     [
         tf.keras.Input(shape=(32, 32, 3)),
