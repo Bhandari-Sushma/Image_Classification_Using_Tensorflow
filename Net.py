@@ -25,3 +25,5 @@ model.compile(
     metrics=['accuracy'],
 
 )
+
+print("this is a model")
