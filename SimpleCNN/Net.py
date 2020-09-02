@@ -10,8 +10,8 @@ model = tf.keras.Sequential(
         tf.keras.layers.MaxPool2D(),
         tf.keras.layers.Conv2D(128, 3, activation='relu'),
         tf.keras.layers.Flatten(),
-        tf.keras.layers.Dense(128, activation='relu'),
-        tf.keras.layers.Dense(64, activation='relu'),
+        tf.keras.layers.Dense(120, activation='relu'),
+        tf.keras.layers.Dense(84, activation='relu'),
         tf.keras.layers.Dense(10, ),
 
     ]
@@ -25,5 +25,3 @@ model.compile(
     metrics=['accuracy'],
 
 )
-
-print("this is a model")
