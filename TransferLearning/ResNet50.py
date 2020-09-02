@@ -26,10 +26,13 @@ and then we'll add our dense fully connected neural network at the end.
 x = base_model.output
 x = tf.keras.layers.GlobalAveragePooling2D()(x)
 
+# may be we don't need all these extra layers
+'''
 x = tf.keras.layers.Dense(1024, activation='relu')(x)
 x = tf.keras.layers.Dense(1024, activation='relu')(x)
 x = tf.keras.layers.Dense(1024, activation='relu')(x)
 x = tf.keras.layers.Dense(512, activation='relu')(x)
+'''
 
 # Here classification on 10 classes from cifer10 data will be done, so 10 neurons are used at the output layer.
 preds = tf.keras.layers.Dense(10, activation='softmax')(x)
