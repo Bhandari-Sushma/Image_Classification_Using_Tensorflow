@@ -62,7 +62,7 @@ model.fit(input_prepross.flow(x_train, y_train), batch_size=1, epochs=5)
 
 # Save the entire model as a SavedModel.
 print("Saving the model")
-model.save('saved_model/my_model')
+model.save('../saved_model/TL_VGG16')
 
 
 # train the model
