@@ -24,7 +24,7 @@ classes = {
 # initialise GUI
 
 win = Tk()
-win.geometry('800x800')
+win.geometry('600x600')
 win.title('Image Classification CIFAR10')
 win.configure()
 win.iconbitmap('photos/photoIcon.ico')
