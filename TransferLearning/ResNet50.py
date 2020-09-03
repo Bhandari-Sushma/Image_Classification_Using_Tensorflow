@@ -62,7 +62,7 @@ model.compile(
 
 )
 
-model.fit(input_prepross.flow(x_train, y_train), batch_size=1, epochs=5)
+model.fit(input_prepross.flow(x_train, y_train), batch_size=1, epochs=20)
 
 # Save the entire model as a SavedModel.
 print("Saving the model")
