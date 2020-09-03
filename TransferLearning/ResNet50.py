@@ -62,11 +62,11 @@ model.compile(
 
 )
 
-model.fit(input_prepross.flow(x_train, y_train), batch_size=1, epochs=20)
+model.fit(input_prepross.flow(x_train, y_train), batch_size=32, epochs=20)
 
 # Save the entire model as a SavedModel.
 print("Saving the model")
-model.save('../saved_model/TL_ResNet50')
+model.save('../Saved_Models/TL_ResNet50')
 
 
 # train the model

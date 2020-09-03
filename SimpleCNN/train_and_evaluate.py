@@ -12,11 +12,11 @@ x_train, x_test = x_train / 255.0, x_test / 255.0
 
 # train the model
 print("Training the model: ")
-model.fit(x_train, y_train, batch_size=32, epochs=100)
+model.fit(x_train, y_train, batch_size=32, epochs=20)
 
 # Save the entire model as a SavedModel.
 print("Saving the model")
-model.save('../saved_model/my_model')
+model.save('../Saved_Models/Net')
 
 
 # train the model
