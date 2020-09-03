@@ -12,7 +12,7 @@ x_train, x_test = x_train / 255.0, x_test / 255.0
 
 # train the model
 print("Training the model: ")
-model.fit(x_train, y_train, batch_size=4, epochs=10)
+model.fit(x_train, y_train, batch_size=32, epochs=100)
 
 # Save the entire model as a SavedModel.
 print("Saving the model")
