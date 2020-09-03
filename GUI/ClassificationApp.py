@@ -4,7 +4,8 @@ from tkinter import filedialog
 from PIL import ImageTk, Image
 import numpy as np
 
-model = tf.keras.models.load_model('../saved_model/my_model')
+#model = tf.keras.models.load_model('../saved_model/my_model')
+model = tf.keras.models.load_model('../saved_model/TL_ResNet50')
 
 # dictionary to label all the CIFAR-10 dataset classes.
 
